@@ -1,14 +1,17 @@
-import { cuadroLateral } from "./cuadroLateral.js";
-import { header } from "./header.js";
+import {
+    header
+} from "./header.js";
+import {
+    perfil
+} from "./info.js";
 
-let divs = document.querySelector (".root")
-function cargarDiv (){
-    divs.innerHTML = `
+let root = document.querySelector(".root");
 
+let componentes = `
     <div class="header">${header}</div>
-    <div class="cuadroLateral">${cuadroLateral}</div>
-    <div class="contenedor"></div>
+    <div class="repositorios"></div>
+    <div class="soporte"></div>
+    <div class="info">${perfil}</div>
+`;
 
-    `;
-}
-cargarDiv();
+root.innerHTML = componentes;

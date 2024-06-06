@@ -1,78 +1,48 @@
 .header {
-    grid-column-start: 1;
-    grid-column-end: 3;
-
-    border: 1px solid black;
-    border-radius: 10px;
-
+    grid-column: 1/3;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
+    justify-content: space-around;
+    gap: 1rem;
     padding: 1rem;
-
 }
 
 .log {
-    background-color: #C6C6C8;
+    background-color: rgb(255, 255, 255);
+    height: 5rem;
     width: 5rem;
-    height: 5rem;
-    border-radius: 100%;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 2rem;
-    font-weight: 600;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 50%;
 }
 
-nav {
-    width: 90%;
+.opciones {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    background-color: rgb(231, 231, 231);
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.btn_header {
+    background-color: rgb(231, 231, 231);
+    width: 15rem;
     height: 5rem;
+    font-size: 2rem;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-nav div {
-    width: 10rem;
-    height: 3.5rem;
-    background-color: #c6c6c8;
-
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    font-weight: 600;
-    cursor: pointer;
+    color: rgb(0, 0, 0);
 }
 
-nav div:hover {
-    transition: 1ms;
-    background-color: gray;
-
-}
-
-.btn {
-    width: 10rem;
-    height: 3.5rem;
-    background-color: rgb(70, 70, 95);
-    color: white;
-    cursor: pointer;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    font-weight: 600;
-}
-
-.btn:hover {
-    transition: 1ms;
-    background-color: rgb(155, 155, 202);
-
+.header span {
+    display: none;
 }

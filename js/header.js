@@ -1,12 +1,10 @@
 let header = `
-    <div class="log">@</div>
-    <nav>
-        <div>Our Vision</div>
-        <div> Projects</div>
-        <div>Life in Grow</div>
-        <div>Members</div>
-        <div>Get in Touch</div>
+    <div class="log"><img src="https://cdn-icons-png.flaticon.com/512/738/738733.png" alt="" width="50px"></div>
+    <span class="material-symbols-outlined">menu</span>
+    <nav class="opciones">
+        <div class="">Portafolio_2024</div>
     </nav>
-    <div class="btn">Pricing</div>
+    <div class="btn_header">Nyulian122GT</div>
 `;
-export{header}
+
+export {header}
